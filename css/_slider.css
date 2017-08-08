@@ -1,0 +1,13 @@
+.ba-slider {
+  margin-bottom: 55px;
+  position: relative;
+}
+.ba-slider .ba-slide {
+  position: relative;
+  min-height: 656px;
+}
+.ba-slider .ba-slide__caption {
+  position: absolute;
+}
+
+/*# sourceMappingURL=_slider.css.map */

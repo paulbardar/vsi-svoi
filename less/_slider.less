@@ -1,0 +1,159 @@
+.ba-slider {
+	// margin-bottom: 55px;
+	position: relative;
+	.ba-slide {
+		position: relative;
+		min-height: 656px;
+		font-family: 'Intro_bold', Arial, sans-serif;
+		background-size: cover;
+		&__caption {
+			position: absolute;
+			bottom: 0;
+			margin-bottom: 60px;
+			max-height: 550px;
+			color: #ffffff;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__date {
+			span {
+				font-family: 'Intro_book', Arial, sans-serif;
+			}
+			flex-grow: 1;
+			margin-bottom: 40px;
+		}
+		&__title {
+			margin: 0;
+			margin-bottom: 15px;
+		}
+		&__text {
+			margin: 0;
+			margin-bottom: 40px;
+			font-size: 36px;
+			font-family: 'Intro_book', Arial, sans-serif;
+		}
+		&__date,
+		&__title,
+		&__text {
+			background-color: #26a75e;
+			align-self: flex-start;
+			padding: 0 15px;
+		}
+		.ba-button__slide {
+			align-self: flex-start;
+		}
+	}
+
+}
+
+// ba-slider__dots
+.ba-slider__dots {
+	padding-top: 26px;
+	font-size: 26px;
+	margin-left: 8%;
+	}
+.ba-slide__dot {
+	// margin-right: 200px;
+	width: 370px;
+	margin-right: 30px;
+
+
+}
+.ba-slider__dot {
+	position: relative;
+	text-decoration: none;
+	color: @primary-color;
+	font-family: 'Intro_bold', Arial, sans-serif;
+	&:focus {
+		outline: none;
+	}
+	span {
+		font-family: 'Intro_book', Arial, sans-serif;
+	}
+	&.active {
+		color: #26a75e;
+		.ba-slider__dot--dot {
+			border: 5px solid @third-color;
+		}
+	}
+	&--date {
+		margin-bottom: 30px;
+	}
+	&--text {
+		font-size: 16px;
+		font-family: 'Intro_book', Arial, sans-serif;
+		margin-top: 10px;
+	}
+	&--title {
+		margin-bottom: 0;
+		max-width: 200px;
+		margin-top: 0;
+	}
+	&--dot {
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 2px solid @primary-color;
+		left: 0;
+		top: 40px;
+		// &.active {
+		// 	border: 5px solid @third-color;
+		// }
+	}
+}
+
+
+// ba-slider-markets
+.recent-markets {
+	width: 1170px;
+	margin: 0 auto;
+	@media screen and (max-width:1170px) {
+		width: 100vw;
+	}
+	&__title {
+		margin-top: 16px;
+		margin-bottom: 20px;
+	}
+}
+.market__container{
+	padding: 0;
+	margin:0;
+
+}
+#market{
+	overflow: visible !important;
+	@media screen and (max-width:1170px) {
+		overflow: hidden !important;
+	}
+}
+.ba-slider-markets {
+	// margin-left: 100px;
+
+	.ba-slide-markets {
+
+		margin-right: 30px;
+
+		img {
+			box-shadow: 0 15px 15px rgba(0,0,0, 0.2);
+			margin-bottom: 23px;
+		}
+		&--title {
+			font-size: 26px;
+			font-family: 'Intro_bold', Arial, sans-serif;
+			margin-bottom: 7px;
+
+		}
+		&--description {
+			margin-bottom: 10px;
+		}
+	}
+
+}
+
+// ba-market-slider
+
+.ba-market-slider {
+	margin: 60px 0;
+}
