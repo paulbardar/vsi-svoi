@@ -44,13 +44,28 @@
 
     $('.ba-slider').slick({
     	arrows: false,
-        infinite: false
+        infinite: false,
+
     });
     $('.ba-slider__dots').slick({
         arrows: false,
         infinite: false,
         slidesToScroll: 1,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     });
     $('.ba-slider__dot').on('click', function(e){
     	e.preventDefault();
